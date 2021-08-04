@@ -35,7 +35,12 @@ input{
     border-radius: 10px !important;
 }
 #resultado{
-    width: 30% !important; 
+    width: 60% !important; 
+    margin-bottom: 20px;
+    border-radius: 10px !important;
+}
+#familiares{
+    width: 60% !important; 
     margin-bottom: 20px;
     border-radius: 10px !important;
 }
