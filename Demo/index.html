@@ -37,14 +37,14 @@
             <div class="row">
               <div class="col-5">
                 <h5>Nombre</h5>
-                <input class="form-control" type="text" name="" id="nombre" />
+                <input class="form-control" type="text" name="" id="nombre" required/>
                 <h5>Documento de identidad</h5>
-                <input class="form-control" type="number" name="" id="documento" />
+                <input class="form-control" type="number" name="" id="documento" required/>
                 
                 <div class="row">
                   <div class="col-5">
                     <h5>Edad</h5>
-                  <input class="form-control" type="number" name="" id="edad" />
+                  <input class="form-control" type="number" name="" id="edad" required/>
                 </select>
                   </div>
                   <div class="col-7">
@@ -59,11 +59,11 @@
                 <h5>Dirección</h5>
                 <input class="form-control" id="direccion" type="text" name="" placeholder="" required disabled />
                   <h5>¿Cual es tu consumo mensual de energia electrica en casa?</h5>
-                  <input class="form-control" onchange="calcularHuella()" type="number" name="" id="luz" />
+                  <input class="form-control" onchange="calcularHuella()" type="number" name="" id="luz" required/>
                   <h5>¿Cual es tu consumo mensual de gas en casa?</h5>
-                  <input class="form-control" onchange="calcularHuella()" type="number" name="" id="gas" />
-                  <h5>¿Cual es tu consumo de gasolina mensual? Si no cuentas con un auto responde 0</h5>
-                <input class="form-control" onchange="calcularHuella()" type="number" name="" id="gasolina" />
+                  <input class="form-control" onchange="calcularHuella()" type="number" name="" id="gas" required/>
+                  <h5>¿Cual es tu consumo de gasolina mensual? <br> Si no cuentas con un auto <br> responde 0</h5>
+                <input class="form-control" onchange="calcularHuella()" type="number" name="" id="gasolina" required/>
                 </div>
               <div class="col-7">
                 <h4>Selecciona con un click la ubicación <br> de tu vivienda</h4>
@@ -71,9 +71,18 @@
                   <!-- Aqui va el mapa -->
                   <div id="map8"></div>
                 </div>
-                <h5>Tu huella de carbono es:</h5>
+                <div class="row">
+                  <div class="col-6">
+                    <h5>¿Con cuantas personas vives?</h5>
+                <input class="form-control" type="number" name="" id="familiares" required/>
+                  </div>
+                  <div class="col-6">
+                    <h5>Tu huella de <br> carbono es:</h5>
                 <input class="form-control" type="text" name="" id="resultado" required disabled/>
-              </div>
+                  </div>
+
+                </div>
+                </div>
               <center>
                 <button type="button" class="btn btn-warning">Enviar</button>
               </center>
